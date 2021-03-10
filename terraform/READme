@@ -1,0 +1,37 @@
+To setup the Terraform statefile
+Prior to this, setup user/profile and granular policies should be assigned to the user.
+
+Step 1: Create s3 bucket 
+ 	aws s3 mb s3://<bucket_name>
+
+Step 2: Step 3: Initialize terraform 
+	terraform init
+
+Step 3: Create variables for profile and region
+
+Step 4: Create AWS provider 
+
+Step 5: Run the following commands.
+	terraform init
+	terraform fmt
+	terraform validate
+	terraform plan
+	terraform apply
+
+Step 6: Deploy VPC, subnets & IGW
+
+Step 7: Create security groups to allow TCP/80 and SSH/22 connections
+
+Step 8: Fetch the AMI id using SSM Parameter store
+
+Step 9: Deploy EC2-key pair
+Consider using Secret Manager - Parameter Store to store key-pair
+    ssh-keygen -t rsa 
+
+Step 10: Deploy EC2-Instance
+Step 11: Create an output file to fetch ec2-instance public_ip
+
+
+
+
+ 
