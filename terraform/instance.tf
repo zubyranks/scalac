@@ -3,7 +3,7 @@ data "aws_ssm_parameter" "linux-AMI" {
   name = "/aws/service/ami-amazon-linux-latest/amzn2-ami-hvm-x86_64-gp2"
 }
 
-# Add generated key-pair 
+# Add generated key-pair
 resource "aws_key_pair" "instance-key-pair" {
   key_name   = "frankfurt1"
   public_key = file("C:\\Users\\CharlesIkenyei\\.ssh\\id_rsa.pub")
